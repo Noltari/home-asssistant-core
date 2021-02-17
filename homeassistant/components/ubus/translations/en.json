@@ -1,0 +1,22 @@
+{
+    "config": {
+        "abort": {
+            "single_instance_allowed": "Already configured. Only a single configuration possible."
+        },
+        "error": {
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "url": "URL",
+                    "name": "Name",
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "description": "Set required parameter to connect to your router",
+                "title": "OpenWrt ubus"
+            }
+        }
+    }
+}
