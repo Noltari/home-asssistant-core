@@ -1,5 +1,7 @@
 """The sensor tests for the tado platform."""
 
+from homeassistant.components.weather import ATTR_CONDITION_FOG
+
 from .util import async_init_integration
 
 
@@ -33,7 +35,7 @@ async def test_home_create_sensors(hass):
     assert state.state == "2.1"
 
     state = hass.states.get("sensor.home_name_weather_condition")
-    assert state.state == "fog"
+    assert state.state == ATTR_CONDITION_FOG
 
 
 async def test_heater_create_sensors(hass):
